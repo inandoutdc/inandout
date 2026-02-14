@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="font-size: 28px; font-weight: 600; letter-spacing: -0.015em;">
+<title>Designers DC 
+<img src="Logo.webp">
+</style>="font-size: 28px; font-weight: 600; letter-spacing: -0.015em;">Designers DC</style><title>Insert Image</title>
+<head>
+<body>
+<h1>Welcome to My Webpage</h1>
+</body>
+</html>
+<style>
+/* reset + base — Apple’s typography & air */
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+background-color: #fdfcfb;
+color: #28ee43;
+font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+line-height: 1.47059;
+font-weight: 400;
+letter-spacing: -0.022em;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+/* Apple often uses large display type with system font */
+h1, h2, h3, p {
+margin: 0;
+}
+
+a {
+text-decoration: none;
+color: #0066cc;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* navigation — clean, frosted, sticky, Home */
+.nav {
+position: sticky;
+top: 0;
+z-index: 100;
+backdrop-filter: saturate(180%) blur(20px);
+background-color: rgba(255, 255, 255, 0.72);
+border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+padding: 0 22px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+
+.nav-container {
+max-width: 1024px;
+margin: 0 auto;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.nav-logo i {
+font-style: normal;
+background: linear-gradient(145deg, #333336, #1d1c1e);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.nav-links {
+display: flex;
+gap: 32px;
+list-style: none;
+font-size: 12px;
+font-weight: 400;
+}
+
+.nav-links a {
+color: #1d1c1e;
+opacity: 0.88;
+}
+
+.nav-links a:hover {
+opacity: 1;
+text-decoration: none;
+}
+
+/* container structure — Apple-width, centered breathing */
+.section {
+max-width: 1280px;
+margin-left: auto;
+margin-right: auto;
+padding: 64px 24px;
+}
+
+.section-hero {
+padding-top: 48px;
+padding-bottom: 80px;
+}
+
+/* hero — big beautiful, two-tones like apple.com */
+.hero {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.hero-subhead {
+font-size: 20px;
+line-height: 1.2;
+font-weight: 400;
+color: #6e6e73;
+margin-bottom: 12px;
+letter-spacing: -0.01em;
+}
+
+.hero-headline {
+font-size: 56px;
+line-height: 1.05;
+font-weight: 600;
+letter-spacing: -0.015em;
+background: linear-gradient(145deg, #1d1c1e, #3a3a3e);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+margin-bottom: 16px;
+}
+
+.hero-cta {
+display: flex;
+gap: 28px;
+margin-top: 16px;
+font-size: 19px;
+font-weight: 400;
+}
+
+.hero-cta a {
+color: #0066cc;
+}
+
+.hero-image img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* product grid —  Apple’s product tiles, clean, responsive */
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 24px;
+}
+
+@media (max-width: 734px) {
+.grid {
+grid-template-columns: 1fr;
+}
+.hero-headline {
+font-size: 40px;
+}
+}
+
+.grid-item {
+background-color: #f5f5f7;
+border-radius: 28px;
+padding: 40px 32px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+transition: all 0.2s ease;
+}
+
+.grid-item:hover {
+background-color: #f0f0f2;
+}
+
+.grid-item h3 {
+font-size: 28px;
+font-weight: 600;
+letter-spacing: -0.01em;
+margin-bottom: 8px;
+color: #1d1c1e;
+}
+
+.grid-item p {
+font-size: 17px;
+color: #6e6e73;
+margin-bottom: 20px;
+}
+
+.grid-links {
+display: flex;
+gap: 24px;
+font-size: 17px;
+}
+
+.price-tag {
+margin-top: 12px;
+color: #86868b;
+font-size: 14px;
+}
+
+/* product tile image placeholder — pure apple minimal */
+.tile-image {
+margin-top: 20px;
+width: 100%;
+max-width: 280px;
+height: auto;
+}
+
+.tile-image svg, .tile-image img {
+width: 100%;
+height: auto;
+}
+
+/* footer — light grey, fine print */
+.footer {
+background-color: #f5f5f7;
+border-top: 1px solid #d2d2d7;
+color: #86868b;
+font-size: 12px;
+padding: 24px 24px 36px;
+}
+
+.footer-content {
+max-width: 1024px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.footer-links {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+list-style: none;
+padding: 0;
+}
+
+.footer-links a {
+color: #515154;
+font-size: 12px;
+}
+
+.copyright {
+color: #86868b;
+}
+
+/* utilities */
+.subdued {
+color: #6e6e73;
+}
+
+/* typography fine-tuning */
+.chip {
+font-size: 12px;
+color: #86868b;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+margin-bottom: 8px;
+}
+
+/* invisible image alt — apple uses decorative imagery */
+.img-placeholder {
+background: linear-gradient(145deg, #e8e8ed, #d1d1d6);
+width: 100%;
+height: 180px;
+border-radius: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #6e6e73;
+font-size: 24px;
+font-weight: 300;
+}
+
+/* two-color split for iphone / watch tiles */
+.grid-item.dark {
+background-color: #1d1c1e;
+}
+
+.grid-item.dark h3, .grid-item.dark p {
+color: #fff;
+}
+
+.grid-item.dark p {
+color: #b0b0b6;
+}
+
+.grid-item.dark .price-tag {
+color: #a1a1a8;
+}
+</style>
+</head>
+<body>
+    <i class="fa fa-shopping-cart"></i>
+
+    <form name="ShoppingList">
+    <fieldset>
+        <legend>Shopping cart</legend>
+        <label>Item: <input type="text" name="name"></label>
+        <label>Quantity: <input type="text" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem()">
+        <input type="button" value="Update" onclick="ModifyItem()">
+        <input type="button" value="Delete" onclick="RemoveItem()">
+    </fieldset>
+    <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        <label><input type="button" value="Clear" onclick="ClearAll()">
+        * Delete all items</label>
+    </div>
+</form>
+
+<!-- navigation – sticky, translucent, minimal -->
+<nav class="nav">
+<div class="nav-container">
+<span class="nav-logo">
+</span>
+<ul class="nav-links">
+<li><a href="#">Flower</a></li>
+<li><a href="#">Cartages</a></li>
+<li><a href="#">Edibles</a></li>
+<li><a href="#">Extracts</a></li>
+<li><a href="#">Weekly Deals</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<!-- hero – latest product story -->
+<div class="section section-hero">
+<div class="hero">
+    </div>
+<!-- Apple Watch – dark variant, like apple's night mode -->
+<div class="grid-item dark">
+<h2 class="hero-headline">Designers DC</h2>
+<h2 style="color: rgb(69, 54, 204) </h2>
+<p style="color: #dedee2;"></p>
+<p class="hero-subhead">Dispensary and Delivery</p>
+<div class="grid-links">
+</div>
+<!-- product hero image – minimal, refined, sets the tone -->
+<div class="hero-image">
+<!-- abstract gradient device – apple uses full-bleed imagery; this is a modern, geometric representation -->
+<svg viewBox="0 0 800 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display: block; background: linear-gradient(145deg, #fafafc, #f2f2f5); border-radius: 28px;">
+<rect width="800" height="400" fill="url(#gradHero)" />
+<defs>
+<linearGradient id="gradHero" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#f9f9fb" />
+<stop offset="100%" stop-color="#ececf0" />
+</linearGradient>
+</defs>
+<!-- silhouette of phone / apple like product – simple & elegant -->
+<rect x="300" y="120" rx="24" ry="24" width="200" height="240" fill="#e4e4e8" />
+<circle cx="400" cy="320" r="16" fill="#b8b8c0" />
+<rect x="360" y="140" rx="8" ry="8" width="80" height="16" fill="#ceced6" />
+<!-- dynamic island subtle nod -->
+<rect x="360" y="190" rx="20" ry="20" width="80" height="6" fill="#b0b0b8" />
+<rect x="380" y="280" rx="6" ry="6" width="40" height="40" fill="#c8c8d0" />
+<text x="400" y="360" font-size="12" text-anchor="middle" fill="#6e6e73" font-family="system-ui, -apple-system, sans-serif">titanium</text>
+</svg>
+</div>
+</div>
+</div>
+
+<!-- grid — two‑column apple-like product storytelling -->
+<div class="section">
+<div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: baseline;">
+<h2 style="font-size: 32px; font-weight: 600; letter-spacing: -0.015em; color: #1d1c1e;"></h2>
+<a href="#" style="font-size: 17px;">See all ›</a>
+</div>
+<!-- product grid: mix of light / dark – exactly like apple.com -->
+<div class="grid">
+<!-- iPhone 15 card -->
+<div class="grid-item">
+<h3>Edibles</h3>
+<div class="grid-links">
+<a href="#">100 MG</a>
+<a href="#">600 MG</a>
+</div>
+<div class="tile-image">
+<!-- subtle placeholder with apple style -->
+<svg viewBox="0 0 300 200" width="100%" height="auto">
+<rect width="300" height="200" fill="#e8e8ed" rx="20" ry="20" />
+<rect x="110" y="40" rx="16" ry="16" width="80" height="130" fill="#d8d8e0" />
+<circle cx="150" cy="150" r="10" fill="#c0c0ca" />
+<rect x="128" y="55" rx="6" width="44" height="8" fill="#c8c8d0" />
+</svg>
+</div>
+</div>
+<!-- Flowers -->
+<div class="grid-item">
+<h3> Flowers</h3>
+<div class="grid-links">
+<a href="#" >Top Shelf</a>
+<a href="#" >Exotic</a>
+</div>
+<div class="tile-image">
+<svg viewBox="0 0 300 200" width="100%" height="auto">
+<rect width="300" height="200" fill="#2d2c30" rx="20" ry="20" />
+<rect x="115" y="45" rx="20" ry="20" width="70" height="110" fill="#3a3a40" />
+<rect x="133" y="70" rx="8" width="34" height="10" fill="#5e5e68" />
+<circle cx="150" cy="140" r="8" fill="#5e5e68" />
+</svg>
+</div>
+<div class="price-tag" style="color: #a8a8b0;">From $399</div>
+</div>
+<!-- Carts -->
+<div class="grid-item">
+<h3>Cartages"</h3>
+<div class="grid-links">
+<a href="#">Disposable</a>
+<a href="#">Regular</a>
+</div>
+<div class="tile-image">
+<svg viewBox="0 0 300 200" width="100%" height="auto">
+<rect width="300" height="200" fill="#e8e8ed" rx="20" ry="20" />
+<rect x="80" y="55" rx="8" ry="8" width="140" height="80" fill="#d2d2dc" />
+<rect x="100" y="135" rx="4" width="100" height="8" fill="#b8b8c0" />
+</svg>
+</div>
+<div class="price-tag">From $1299</div>
+</div>
+<!-- iPad Pro -->
+<div class="grid-item">
+<h3>Extracs</h3>
+<div class="grid-links">
+<a href="#">Exotic</a>
+<a href="#">Top Shelf</a>
+</div>
+<div class="tile-image">
+<svg viewBox="0 0 300 200" width="100%" height="auto">
+<rect width="300" height="200" fill="#e8e8ed" rx="20" ry="20" />
+<rect x="90" y="35" rx="16" ry="16" width="120" height="150" fill="#d2d2dc" />
+<circle cx="150" cy="175" r="6" fill="#b0b0b8" />
+</svg>
+</div>
+<div class="price-tag">From $799</div>
+</div>
+</div>
+</div>
+
+<!-- second story row: like apple's "why apple" but minimal -->
+<div class="section" style="padding-top: 24px;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch;">
+</div>
+<!-- iPhone trade in card -->
+<div style="background: hsl(101, 100%, 45%); border-radius: 24px; padding: 32px; color: white;">
+<h3 style="font-size: 28px; font-weight: 600; letter-spacing: -0.015em; color: white;">Weekly Deals</h3>
+</div>
+</div>
+</div>
+</main>
+
+<!-- footer – dense, clean, apple style directory -->
+<footer class="footer">
+<div class="footer-content">
+<div style="display: flex; flex-direction: column; gap: 20px;">
+<!-- footnote: like apple's fine print -->
+<p style="line-height: 1.4; margin-bottom: 8px;">
+* Pricing for iPhone 15 and iPhone 15 Plus includes a $30 connectivity discount that requires AT&T, T‑Mobile, or Verizon. Available only to qualified customers and requires 24‑month installment loan.
+</p>
+<p>
+Representative example: monthly price based on $799 iPhone 15 total cost. Requires activation.
+</p>
+</div>
+<!-- footer link grid – mimics apple's multi-column -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 24px; border-top: 1px solid #d2d2d7; padding-top: 24px; margin-top: 16px;">
+<div>
+<ul style="list-style: none; padding: 0;">
+<li style="font-weight: 600; color: #1d1c1e; margin-bottom: 8px;">Shop and Learn</li>
+<li><a href="#">Flower</a></li>
+<li><a href="#">Cartages</a></li>
+<li><a href="#">Edibles</a></li>
+<li><a href="#">Extracts</a></li>
+<li><a href="#">Weekly Deals</a></li>
+</ul>
+</div>
+<div>
+<ul style="list-style: none; padding: 0;">
+<li style="font-weight: 600; color: #1d1c1e; margin-bottom: 8px;">Support</li>
+<li><a href="#">Contact Us</a></li>
+</div>
+<!-- footer copyright row -->
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border-top: 1px solid #d2d2d7; padding-top: 24px; margin-top: 8px;">
+<span class="copyright">© 2025 like apple. All rights reserved.</span>
+<span style="display: flex; gap: 24px;">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Use</a>
+<a href="#">Sales and Refunds</a>
+</span>
+<span style="color: #515154;">United States</span>
+</div>
+</div>
+</footer>
+</body>
+</html>
+```
